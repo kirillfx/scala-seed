@@ -45,39 +45,39 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 # Usage
 Use the default subshell (there is **NO** need to clone this repo) by running:
 ```bash
-nix develop github:devinsideyou/scala-seed
+nix develop github:kirillfx/scala-seed
 ```
 For [direnv](https://direnv.net/)/[nix-direnv](https://github.com/nix-community/nix-direnv) users put the following into your `.envrc`:
 ```bash
-use flake github:devinsideyou/scala-seed
+use flake github:kirillfx/scala-seed
 ```
-**Pro tip**: I will keep updating this flake so you might want to pin it to a [specific commit](https://github.com/DevInsideYou/scala-seed/commits/main):
+**Pro tip**: I will keep updating this flake so you might want to pin it to a [specific commit](https://github.com/kirillfx/scala-seed/commits/main):
 ```bash
-nix develop github:devinsideyou/scala-seed/0c3b8c657b37eae320b073724d74390cf3162edf
+nix develop github:kirillfx/scala-seed/0c3b8c657b37eae320b073724d74390cf3162edf
 ```
 ```bash
-use flake github:devinsideyou/scala-seed/0c3b8c657b37eae320b073724d74390cf3162edf
+use flake github:kirillfx/scala-seed/0c3b8c657b37eae320b073724d74390cf3162edf
 ```
 Alternative shells can be used as follows:
 ```bash
-nix develop github:devinsideyou/scala-seed#java21 # the same as the default
+nix develop github:kirillfx/scala-seed#java21 # the same as the default
 ```
 ```bash
-nix develop github:devinsideyou/scala-seed#java17
+nix develop github:kirillfx/scala-seed#java17
 ```
 ```bash
-nix develop github:devinsideyou/scala-seed#java11
+nix develop github:kirillfx/scala-seed#java11
 ```
 ```bash
-nix develop github:devinsideyou/scala-seed#java8
+nix develop github:kirillfx/scala-seed#java8
 ```
 Here is how you can see the metadata of the flake:
 ```bash
-nix flake metadata github:devinsideyou/scala-seed
+nix flake metadata github:kirillfx/scala-seed
 ```
 And here is how you can see everything the flake has to offer:
 ```bash
-nix flake show github:devinsideyou/scala-seed --all-systems
+nix flake show github:kirillfx/scala-seed --all-systems
 ```
 Here is a useful incantation to pretty print a filtered list of what's on the path:
 ```bash
@@ -99,16 +99,16 @@ Just like any other subshell this one can be exited by typing `exit` or pressing
 Now that you have a working dev environment you can create your first Scala project like this:
 
 ```bash
-cs launch giter8 -- devinsideyou/scala-seed  # Scala 2
+cs launch giter8 -- kirillfx/scala-seed  # Scala 2
 ```
 ```bash
-cs launch giter8 -- devinsideyou/scala3-seed # Scala 3
+cs launch giter8 -- kirillfx/scala3-seed # Scala 3
 ```
 Now `cd` into your newly created project and launch [sbt](https://www.scala-sbt.org/) by typing `sbt`. The template you just used to create a project will display a couple of useful aliases for you to try. For instance `r` to run the program or `t` to run the tests. Type `exit` or press `Ctrl+D` when you are done to exit `sbt`. Don't forget that you are still inside of the Nix subshell so type `exit` or press `Ctrl+D` again to end up back in your regular shell.
 
 Here is a [Scala Crash Course](https://www.youtube.com/watch?v=-xRfJcwhy7A) and here is a [Functional Programming Crash Course](https://www.youtube.com/watch?v=XXkYBncbz0c).
 
-Ask questions on [discord](http://discord.devinsideyou.com)!
+Ask questions on [discord](http://discord.kirillfx.com)!
 
 Welcome to Scala!
 
