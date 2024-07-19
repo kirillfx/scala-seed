@@ -35,6 +35,7 @@
               sbt
               scala-cli
               scalafmt
+              metals # hls
             ];
           };
       in {
